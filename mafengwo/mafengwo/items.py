@@ -35,8 +35,6 @@ class MafengwoItem(scrapy.Item):
     from_url = scrapy.Field()
     #抓取时间
     crawl_time = scrapy.Field()
-
-class MafengwoImageItem(scrapy.Item):
-    name = scrapy.Field()
+    images = scrapy.Field()
     image_urls = scrapy.Field()
-    url = scrapy.Field()
+    image_paths = scrapy.Field()

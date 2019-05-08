@@ -71,7 +71,10 @@ DEFAULT_REQUEST_HEADERS = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'mafengwo.pipelines.MafengwoPipeline': 300,
+    'mafengwo.pipelines.MafengwoImagePipeline': 301,
 }
+
+IMAGES_STORE="./mafengwo_images"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
