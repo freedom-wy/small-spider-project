@@ -26,7 +26,9 @@ class CrawlMafengwoSpider(scrapy.Spider):
     def parse_index(self, response):
         item = {}
         item['name'] = response.xpath("//span[@class='MAvaName']/text()").extract_first()
-        for article in response.xpath("//div[@class='notes_list']/ul/li"):
+        article_list = response.xpath("//div[@class='notes_list']/ul/li")
+        print("当前解析出游记%s篇"%len(article_list))
+        for article in article_list:
             item['from_url'] = "http://www.mafengwo.cn"+article.xpath("./dl/dt/a/@href").extract_first()
             read_comment_value = article.xpath(".//div[@class='note_more']/span[1]/em/text()").extract_first().split("/")
             if len(read_comment_value) == 2:
@@ -57,7 +59,9 @@ class CrawlMafengwoSpider(scrapy.Spider):
         mddid = id_result['mddid']
         #存在滑动页面
         if iid:
+            print(response.url+"存在多页")
             response.request.meta['id'] = id
+            response.request.meta['mddid'] = mddid
             response.request.meta['iid'] = iid
             response.request.meta['title'] = response.xpath("//title/text()").extract_first()
             detail_list = response.xpath("//div[@class='_j_content_box']//p").xpath('string(.)').extract()
@@ -66,7 +70,7 @@ class CrawlMafengwoSpider(scrapy.Spider):
             next_request_seq = response.xpath("//p[last()]/@data-seq").extract_first()
             next_detail_url = "http://www.mafengwo.cn/note/ajax/detail/getNoteDetailContentChunk?id=%s&iid=%s&seq=%s&back=0" % (id, iid, next_request_seq)
             yield scrapy.Request(url=next_detail_url, callback=self.handle_detail_json, dont_filter=True,meta=response.request.meta)
-        #不存在滑动页面
+        # 不存在滑动页面
         else:
             detail_list = response.xpath("//p[@class='_j_note_content']").xpath('string(.)').extract()
             for detail_item in detail_list:
@@ -83,7 +87,7 @@ class CrawlMafengwoSpider(scrapy.Spider):
         if html_text['html'] == "":
             #如果存在相册ID,则请求相册
             if response.request.meta['mddid']:
-                photo_url = "http://www.mafengwo.cn/photo/%s/scenery_%s_1.html"%(response.request.meta['mddid'],id)
+                photo_url = "http://www.mafengwo.cn/photo/%s/scenery_%s_1.html"%(response.request.meta['mddid'],response.request.meta['id'])
                 yield scrapy.Request(url=photo_url,callback=self.handle_photo_detail,meta=response.request.meta)
         html = Selector(text=html_text['html'])
         detail_list = html.xpath("//p").xpath('string(.)').extract()
