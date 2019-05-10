@@ -101,3 +101,15 @@ class MafengwoDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+class MafengwoProxyMiddleware(object):
+    def process_response(self, request, response, spider):
+        if 'mafengwo.net' in request.url:
+            return response
+        elif response is None:
+            return request
+        elif 'flashcookie.sw' in response.text:
+            return request
+        else:
+            # print(response.request.headers)
+            return response

@@ -44,7 +44,7 @@ class CrawlMafengwoSpider(scrapy.Spider):
             #相册ID
             item['mddid'] = None
             item['detail'] = []
-            yield scrapy.Request(url=item['from_url'],meta=item,callback=self.handle_detail)
+            yield scrapy.Request(url=item['from_url'],meta=item,callback=self.handle_detail,dont_filter=True)
 
     #解析游记
     def handle_detail(self,response):
@@ -110,7 +110,7 @@ class CrawlMafengwoSpider(scrapy.Spider):
         mafengwo_data['release_time'] = response.request.meta['release_time']
         mafengwo_data['name'] = response.request.meta['name']
         mafengwo_data['content'] = ''.join(response.request.meta['detail'])
-        photo_url_search = re.compile(r'<img\sdata-original="(.*?)"')
+        photo_url_search = re.compile(r'<img\sdata-original=\"(.*?)\?')
         mafengwo_data['image_urls'] = photo_url_search.findall(response.text)
         yield mafengwo_data
 
