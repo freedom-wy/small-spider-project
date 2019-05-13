@@ -4,8 +4,7 @@ import requests
 import json
 from concurrent.futures import ThreadPoolExecutor
 import multiprocessing
-from kolesa.hanmongo import mongo
-
+from handle_mongo import kolesa_mongo
 
 class Crawl_kolesa(object):
     def __init__(self):
@@ -58,7 +57,7 @@ class Crawl_kolesa(object):
                     detail_info['price'] = detail.get("unitPrice",None)
                     detail_info['from_url'] = detail.get("url",None)
                     #对接mongo
-                    mongo.handle_save_task(detail_info)
+                    kolesa_mongo.handle_save_task(detail_info)
 
     #处理详情页
     def handle_detail(self,item):
@@ -67,24 +66,44 @@ class Crawl_kolesa(object):
         item['year'] = html.xpath("//span[@class='year']/text()")[0].strip()
         item_list = html.xpath("//div[@class='offer__parameters']/dl")
         for i in item_list:
-            name = i.xpath("./dt/span/text()")[0]
+            name = i.xpath("./dt/span/text()")[0].strip()
             if name == "Пробег":
+                #公里数
                 item['mileage'] = i.xpath("./dd/text()")[0].strip()
             elif name == "Коробка передач":
-                item['Gearbox'] = i.xpath("./dd/text()")[0].strip()
+                #变速箱
+                item['gearbox'] = i.xpath("./dd/text()")[0].strip()
             elif name == "Руль":
-                item['Steering_wheel'] = i.xpath("./dd/text()")[0].strip()
-        print(item)
+                #方向盘方向
+                item['steering_wheel'] = i.xpath("./dd/text()")[0].strip()
+        if not item.get('mileage'):
+            item['mileage'] = 'no data'
+        if not item.get('gearbox'):
+            item['geargox'] = 'no data'
+        if not item.get('streering_wheel'):
+            item['steering_wheel'] = 'no data'
+        #保存数据
+        kolesa_mongo.handle_save_data(item)
+
 
     #处理任务方法
     def handle_task(self):
         self.handle_brand()
         print("处理品牌")
         t = ThreadPoolExecutor()
-        thread_list = []
         for url in self.brand_list_url:
-            thread = t.submit(self.handle_brand_page,url)
-            thread_list.append(thread)
+            t.submit(self.handle_brand_page,url)
+        t.shutdown()
+
+    #处理最终数据方法
+    def handle_data(self):
+        t = ThreadPoolExecutor(2)
+        while True:
+            task = kolesa_mongo.handle_get_task()
+            if task:
+                t.submit(self.handle_detail, task)
+            else:
+                break
         t.shutdown()
 
     #爬虫启动方法
@@ -92,6 +111,10 @@ class Crawl_kolesa(object):
         m1 = multiprocessing.Process(target=self.handle_task)
         m1.start()
         m1.join()
+
+        m2 = multiprocessing.Process(target=self.handle_data)
+        m2.start()
+        m2.join()
 
 
 

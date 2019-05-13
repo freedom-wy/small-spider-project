@@ -11,4 +11,12 @@ class Handle_Mongo(object):
         task_collection = Collection(self.db_data,'kolesa_task')
         task_collection.update({'id':item['id']},item,True)
 
-mongo = Handle_Mongo()
+    def handle_get_task(self):
+        task_collection = Collection(self.db_data,'kolesa_task')
+        return task_collection.find_one_and_delete({})
+
+    def handle_save_data(self,item):
+        task_collection = Collection(self.db_data,'kolesa_data')
+        task_collection.update({'id':item['id']},item,True)
+
+kolesa_mongo = Handle_Mongo()
