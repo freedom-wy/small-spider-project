@@ -5,6 +5,7 @@
 #### 2、video 视频抓取
 #### 3、mafengwo 马蜂窝游记和图片抓取 
 #### 4、kolesa kolesa数据抓取 
+#### 5、douban_movie_top250 豆瓣电影top250数据抓取 
 
 
 
