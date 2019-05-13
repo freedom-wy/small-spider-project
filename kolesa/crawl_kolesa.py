@@ -4,6 +4,7 @@ import requests
 import json
 from concurrent.futures import ThreadPoolExecutor
 import multiprocessing
+from kolesa.hanmongo import mongo
 
 
 class Crawl_kolesa(object):
@@ -56,8 +57,8 @@ class Crawl_kolesa(object):
                     detail_info['car_brand'] = detail['attributes']['brand']
                     detail_info['price'] = detail.get("unitPrice",None)
                     detail_info['from_url'] = detail.get("url",None)
-                    print(detail_info)
                     #对接mongo
+                    mongo.handle_save_task(detail_info)
 
     #处理详情页
     def handle_detail(self,item):
