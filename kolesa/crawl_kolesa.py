@@ -97,7 +97,7 @@ class Crawl_kolesa(object):
 
     #处理最终数据方法
     def handle_data(self):
-        t = ThreadPoolExecutor(2)
+        t = ThreadPoolExecutor()
         while True:
             task = kolesa_mongo.handle_get_task()
             if task:
