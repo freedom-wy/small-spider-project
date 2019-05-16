@@ -69,6 +69,3 @@ def main():
 if __name__ == '__main__':
     #入口函数调用
     main()
-
-
-
