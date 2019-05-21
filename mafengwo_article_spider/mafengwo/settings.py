@@ -101,3 +101,4 @@ DOWNLOAD_TIMEOUT = 10
 IMAGES_EXPIRES = 90  #90天内抓取的都不会被重抓
 RETRY_TIMES = 100
 # LOG_LEVEL = 'INFO'
+proxy_url = '代理库URL'
