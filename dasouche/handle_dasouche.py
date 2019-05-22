@@ -56,12 +56,18 @@ class HandleDaSouChe(object):
         id_search = re.compile(r"carId=(.*?)&shopCode=(\d+)")
         car_id = id_search.search(url).group(1)
         shop_id = id_search.search(url).group(2)
+        #车辆详情信息
         car_detail_url = "https://aolai.souche.com//v1/carDetailsApi/carDetailInfo.json?carId=%s"%car_id
         car_detail = self.handle_request(method='GET',url=car_detail_url)
         car_detail_result = json.loads(car_detail)['data']
+        #售卖商店信息
         shop_detail_url = "https://aolai.souche.com//v1/shopApi/queryTangecheShopInfo.json?carId=%s&citycode=%s&shopCode=%s"%(car_id,car_detail_result['baseCarInfoView']['cityCode'],shop_id)
         shop_detail_result = self.handle_request(method='GET',url=shop_detail_url)
         car_detail_result.update(json.loads(shop_detail_result)['data'])
+        #车辆厂商配置信息
+        car_config_url = "https://aolai.souche.com/v1/carDetailsApi/carConfigDetailInfo.json?_security_token=undefined&carId=%s"%car_id
+        car_config_result = self.handle_request(method='GET',url=car_config_url)
+        car_detail_result.update(json.loads(car_config_result)['data'])
         car_detail_result['from_url'] = url
         self.handle_save_data(car_detail_result)
 
