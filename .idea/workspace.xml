@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24fd18a8-d3f7-44f5-9be1-26283ced1cc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/dongqiudi_pic/C罗与法拉利车手勒克莱尔同场较劲！/ChO2w1zuIRiAIJuDAAJrbFscpoU610.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/dongqiudi_pic/C罗与法拉利车手勒克莱尔同场较劲！/ChO2w1zuISOAF511AAFaT82ScyE114.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/dongqiudi_pic/C罗与法拉利车手勒克莱尔同场较劲！/ChONolzuIOiASesEAAEgiz_2cMw359.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dongqiudi/dongqiudi/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dongqiudi/dongqiudi/spiders/crawl_dongqiudi.py" beforeDir="false" afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/spiders/crawl_dongqiudi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lagou/crawl_lagou_job.py" beforeDir="false" afterPath="$PROJECT_DIR$/lagou/crawl_lagou_job.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,62 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/spiders/crawl_dongqiudi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/middlewares.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-              <folding>
-                <element signature="e#195#209#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/main.py">
+        <entry file="file://$PROJECT_DIR$/lagou/crawl_lagou_job.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+            <state relative-caret-position="681">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py">
+        <entry file="file://$PROJECT_DIR$/lagou/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="203">
+              <caret line="7" column="86" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -96,8 +52,6 @@
         <option value="$PROJECT_DIR$/dasouche/README.md" />
         <option value="$PROJECT_DIR$/dasouche/handle_dasouche.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/lagou/crawl_lagou_job.py" />
-        <option value="$PROJECT_DIR$/lagou/test.py" />
         <option value="$PROJECT_DIR$/lagou/README.md" />
         <option value="$PROJECT_DIR$/mafengwo/mafengwo/settings.py" />
         <option value="$PROJECT_DIR$/mafengwo/mafengwo/spiders/crawl_mafengwo.py" />
@@ -111,10 +65,12 @@
         <option value="$PROJECT_DIR$/dongqiudi/dongqiudi/middlewares.py" />
         <option value="$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py" />
         <option value="$PROJECT_DIR$/dongqiudi/dongqiudi/spiders/crawl_dongqiudi.py" />
+        <option value="$PROJECT_DIR$/lagou/test.py" />
+        <option value="$PROJECT_DIR$/lagou/crawl_lagou_job.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="776" />
     <option name="y" value="58" />
     <option name="width" value="1680" />
@@ -138,24 +94,7 @@
             <path>
               <item name="small-spider-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
-              <item name="dongqiudi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="small-spider-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
-              <item name="dongqiudi" type="462c0819:PsiDirectoryNode" />
-              <item name="dongqiudi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="small-spider-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
-              <item name="mafengwo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="small-spider-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
-              <item name="mafengwo" type="462c0819:PsiDirectoryNode" />
-              <item name="mafengwo" type="462c0819:PsiDirectoryNode" />
+              <item name="lagou" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -187,7 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.crawl_lagou_job">
     <configuration name="crawl_lagou_job" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="small-spider-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -272,7 +211,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="small-spider-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -280,11 +219,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lagou" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lagou/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -295,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.crawl_lagou_job" />
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.handle_news" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.crawl_lagou_job" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -318,13 +257,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18967333" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18967333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.84815615" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4913232" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -378,17 +318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lagou/test.py" />
-    <entry file="file://$PROJECT_DIR$/lagou/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="87">
-            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-175" />
@@ -405,16 +334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-436">
           <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lagou/crawl_lagou_job.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -513,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -541,6 +453,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
           <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lagou/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="87">
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lagou/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="86" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lagou/crawl_lagou_job.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

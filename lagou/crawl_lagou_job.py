@@ -1,6 +1,6 @@
 import re
 import requests
-from lxml import etree
+import time
 
 
 
@@ -8,7 +8,7 @@ class HandleLaGou(object):
     def __init__(self):
         self.lagou_session = requests.session()
         self.header = {
-            "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+            "User-Agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36",
         }
         self.city_list = ""
 
@@ -17,31 +17,31 @@ class HandleLaGou(object):
         city_url = "https://www.lagou.com/jobs/allCity.html"
         city_result = self.handle_request(method='GET',url=city_url)
         self.city_list = city_search.findall(city_result)
+        #清除cookie
+        self.lagou_session.cookies.clear()
 
     def handle_city_job(self):
+        job_index_url = "https://www.lagou.com/jobs/list_python?labelWords=&fromSearch=true&suginput="
+        self.handle_request(method='GET',url=job_index_url)
         for city in self.city_list:
-            job_url = "https://www.lagou.com/jobs/positionAjax.json?city=%s&needAddtionalResult=false"%city
+            time.sleep(1)
+            page_url = "https://www.lagou.com/jobs/positionAjax.json?city=%s&needAddtionalResult=false"%city
             for page in range(1,31):
                 data = {
                     "first":"false",
-                    "pn":page,
+                    "pn":str(page),
                     "kd":"python",
                 }
-                # self.header['Referer'] = "https://www.lagou.com/jobs/list_python?city=%s"%city
-                self.header['Referer'] = "https://www.lagou.com/jobs/list_python?city=%e5%8d%97%e4%ba%ac"
-                job_result = self.handle_request(method='POST',url=job_url,data=data)
+                self.header['Referer'] = job_index_url
+                job_result = self.handle_request(method='POST',url=page_url,data=data)
                 print(job_result)
-                break
-            break
 
     def handle_request(self,method,url,data=None):
         if method == "GET":
             response = self.lagou_session.get(url=url,headers=self.header)
             return response.text
         elif method == "POST":
-            print(data)
             response = self.lagou_session.post(url=url,headers=self.header,data=data)
-            print(response.request.headers)
             return response.text
 
     def run(self):
