@@ -1,6 +1,11 @@
+import json
+import random
 import re
 import requests
 import time
+import pymongo
+from pymongo.collection import Collection
+import multiprocessing
 
 
 
@@ -11,6 +16,8 @@ class HandleLaGou(object):
             "User-Agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36",
         }
         self.city_list = ""
+        lagou_client = pymongo.MongoClient(host="127.0.0.1",port=27017)
+        self.lagou_db = lagou_client['lagou']
 
     def handle_city(self):
         city_search = re.compile(r'zhaopin/">(.*?)</a>')
@@ -20,33 +27,62 @@ class HandleLaGou(object):
         #清除cookie
         self.lagou_session.cookies.clear()
 
-    def handle_city_job(self):
+    def handle_city_job(self,city):
+        print(city)
         job_index_url = "https://www.lagou.com/jobs/list_python?labelWords=&fromSearch=true&suginput="
         self.handle_request(method='GET',url=job_index_url)
-        for city in self.city_list:
-            time.sleep(1)
-            page_url = "https://www.lagou.com/jobs/positionAjax.json?city=%s&needAddtionalResult=false"%city
-            for page in range(1,31):
-                data = {
-                    "first":"false",
-                    "pn":str(page),
-                    "kd":"python",
-                }
-                self.header['Referer'] = job_index_url
-                job_result = self.handle_request(method='POST',url=page_url,data=data)
-                print(job_result)
+        page_url = "https://www.lagou.com/jobs/positionAjax.json?city=%s&needAddtionalResult=false"%city
+        for page in range(1,31):
+            data = {
+                "first":"false",
+                "pn":str(page),
+                "kd":"python",
+            }
+            self.header['Referer'] = job_index_url
+            job_result = self.handle_request(method='POST',url=page_url,data=data)
+            self.handle_data(job_result)
+
+    def handle_data(self,data):
+        lagou_data = json.loads(data)
+        job_list = lagou_data['content']['positionResult']['result']
+        for job in job_list:
+            self.handle_save_data(job)
 
     def handle_request(self,method,url,data=None):
-        if method == "GET":
-            response = self.lagou_session.get(url=url,headers=self.header)
-            return response.text
-        elif method == "POST":
-            response = self.lagou_session.post(url=url,headers=self.header,data=data)
-            return response.text
+        while True:
+            proxy="http://HTK32673HL02BK2D:50125D2D38937C94@http-dyn.abuyun.com:9020"
+            proxies = {
+                "http":proxy,
+                "https":proxy
+            }
+            try:
+                if method == "GET":
+                    response = self.lagou_session.get(url=url,headers=self.header,proxies=proxies)
+                elif method == "POST":
+                    time.sleep(random.choice(range(5,16)))
+                    response = self.lagou_session.post(url=url,headers=self.header,data=data,proxies=proxies)
+            except:
+                continue
+            else:
+                if '您操作太频繁,请稍后再访问' in response.text:
+                    continue
+                elif response.text == []:
+                    continue
+                else:
+                    return response.text
+
+    def handle_save_data(self,item):
+        lagou_collection = Collection(self.lagou_db,"lagou_data")
+        lagou_collection.update({"positionId":item['positionId']},item,True)
 
     def run(self):
         self.handle_city()
-        self.handle_city_job()
+        print(self.city_list)
+        pool = multiprocessing.Pool(1)
+        for city in self.city_list[0:2]:
+            pool.apply_async(self.handle_city_job,(city,))
+        pool.close()
+        pool.join()
 
 def main():
     lagou = HandleLaGou()
