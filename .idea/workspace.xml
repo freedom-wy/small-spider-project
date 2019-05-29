@@ -3,31 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="24fd18a8-d3f7-44f5-9be1-26283ced1cc3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/00322393e2842be2da0a87429560038b6f38a59b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/0c705a47ad1e62d19589829a1e123fb0c1ed5b27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/20a632df2548ce2834953e15a97ba4b3e640824c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/246c84a3b55dbb2b6827ce580844820a2497b839.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/5fb2b55831c5bfd061cd1e36b833f6834b3b23cf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/68bb251e7b18ba539fe9c7d4c08442d4a5aa5dd7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/6b697d382f77dcdf294e0d4b1b66b9147c797545.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/7ce9eedfb95c0216e0f857650739b6338cbda6a4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/7f619a6c8fca2a01de29162b5112f0cc33489437.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/9031e6c4bf57aaa848b394c72fa720e99692a33c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/9fca78b312308a95d64ada0cedaa1a4050a5a9af.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/a69a28e66b5bc750521f7c26ebce8ee1640e8993.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/a953e266174513142860036981cfcc90ecd3bb9f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/b6f8ecb4f9294d775ef3a020ce3c961fbeef3fc4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/bc6c62fe34354a8cabd8eade96279a881bd1d81e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/bfc2d7f1db7a9617208b7a08158ac3dd212ddfd3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/cfb459e8a806cd04c66d14d325d4ecb89ef1159b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/db1c77ae0f4e90f63dc6aa2202f748eceb3046cf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/db727f43068fc44c657b9ac281924961a5dfc94f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/e172b408bcff7367cc1065167ae25303728bb474.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/e87d2d7d1312926d1a0c924f981a6cd2db363c1e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/ec69e86fd94c5487e2d6f4966dad8f47f02cf19a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/f0377b259e0b9369134727115a6bc9171dae8181.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/mafengwo_images/full/fb980839652c8b176bbf06cc9c65c9607bc38fe1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mafengwo/mafengwo/spiders/crawl_mafengwo.py" beforeDir="false" afterPath="$PROJECT_DIR$/mafengwo/mafengwo/spiders/crawl_mafengwo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,46 +12,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/spiders/crawl_mafengwo.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mafengwo_article_spider/mafengwo/spiders/crawl_mafengwo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="140" selection-start-line="140" selection-end-line="140" />
+            <state relative-caret-position="348">
+              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-174" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -103,8 +46,10 @@
         <option value="$PROJECT_DIR$/lagou/crawl_lagou_job.py" />
         <option value="$PROJECT_DIR$/lagou/test.py" />
         <option value="$PROJECT_DIR$/lagou/README.md" />
-        <option value="$PROJECT_DIR$/mafengwo/mafengwo/spiders/crawl_mafengwo.py" />
         <option value="$PROJECT_DIR$/mafengwo/mafengwo/settings.py" />
+        <option value="$PROJECT_DIR$/mafengwo/mafengwo/spiders/crawl_mafengwo.py" />
+        <option value="$PROJECT_DIR$/news_title_sentiment_analysis/setting.py" />
+        <option value="$PROJECT_DIR$/news_title_sentiment_analysis/handle_news.py" />
       </list>
     </option>
   </component>
@@ -129,24 +74,6 @@
             <path>
               <item name="small-spider-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="small-spider-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
-              <item name="mafengwo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="small-spider-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
-              <item name="mafengwo" type="462c0819:PsiDirectoryNode" />
-              <item name="mafengwo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="small-spider-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
-              <item name="mafengwo" type="462c0819:PsiDirectoryNode" />
-              <item name="mafengwo" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -176,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.handle_news">
     <configuration name="crawl_lagou_job" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="small-spider-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -211,6 +138,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dasouche/handle_dasouche.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="handle_news" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="small-spider-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/news_title_sentiment_analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/news_title_sentiment_analysis/handle_news.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -263,6 +211,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.handle_news" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.crawl_lagou_job" />
         <item itemvalue="Python.test" />
@@ -286,12 +235,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14120126" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14120126" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.77440345" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19197397" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -372,6 +321,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/spiders/crawl_mafengwo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-436">
+          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lagou/crawl_lagou_job.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -382,44 +372,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/items.py">
+    <entry file="file://$PROJECT_DIR$/news_title_sentiment_analysis/setting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mafengwo_article_spider/mafengwo/spiders/crawl_mafengwo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="118" column="32" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="136" selection-end-column="19" />
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/spiders/crawl_mafengwo.py">
+    <entry file="file://$PROJECT_DIR$/news_title_sentiment_analysis/handle_news.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        <state relative-caret-position="-1758">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding>
-            <element signature="e#24#35#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/settings.py">
+    <entry file="file://$PROJECT_DIR$/mafengwo_article_spider/mafengwo/spiders/crawl_mafengwo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+        <state relative-caret-position="348">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
