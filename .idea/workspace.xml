@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24fd18a8-d3f7-44f5-9be1-26283ced1cc3" name="Default Changelist" comment="" />
+    <list default="true" id="24fd18a8-d3f7-44f5-9be1-26283ced1cc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/dongqiudi_pic/C罗与法拉利车手勒克莱尔同场较劲！/ChO2w1zuIRiAIJuDAAJrbFscpoU610.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/dongqiudi_pic/C罗与法拉利车手勒克莱尔同场较劲！/ChO2w1zuISOAF511AAFaT82ScyE114.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/dongqiudi_pic/C罗与法拉利车手勒克莱尔同场较劲！/ChONolzuIOiASesEAAEgiz_2cMw359.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dongqiudi/dongqiudi/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dongqiudi/dongqiudi/spiders/crawl_dongqiudi.py" beforeDir="false" afterPath="$PROJECT_DIR$/dongqiudi/dongqiudi/spiders/crawl_dongqiudi.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +21,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/spiders/crawl_dongqiudi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+            <state relative-caret-position="638">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -43,20 +60,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="29">
-              <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+            <state relative-caret-position="348">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -77,7 +94,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/dasouche/README.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/dasouche/handle_dasouche.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/lagou/crawl_lagou_job.py" />
@@ -89,8 +105,11 @@
         <option value="$PROJECT_DIR$/news_title_sentiment_analysis/handle_news.py" />
         <option value="$PROJECT_DIR$/dongqiudi/dongqiudi/main.py" />
         <option value="$PROJECT_DIR$/dongqiudi/dongqiudi/items.py" />
-        <option value="$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py" />
         <option value="$PROJECT_DIR$/dongqiudi/dongqiudi/pipelines.py" />
+        <option value="$PROJECT_DIR$/dongqiudi/README.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/dongqiudi/dongqiudi/middlewares.py" />
+        <option value="$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py" />
         <option value="$PROJECT_DIR$/dongqiudi/dongqiudi/spiders/crawl_dongqiudi.py" />
       </list>
     </option>
@@ -121,6 +140,23 @@
               <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
               <item name="dongqiudi" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="small-spider-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
+              <item name="dongqiudi" type="462c0819:PsiDirectoryNode" />
+              <item name="dongqiudi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="small-spider-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
+              <item name="mafengwo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="small-spider-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="small-spider-project" type="462c0819:PsiDirectoryNode" />
+              <item name="mafengwo" type="462c0819:PsiDirectoryNode" />
+              <item name="mafengwo" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -134,6 +170,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\python_study\small-spider-project\dongqiudi" />
       <recent name="E:\python_study\small-spider-project\lagou" />
       <recent name="D:\small-spider-project\dasouche" />
     </key>
@@ -330,16 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="243">
-            <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/dasouche/handle_dasouche.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -378,13 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-436">
           <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -449,13 +469,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/spiders/crawl_dongqiudi.py">
+    <entry file="file://$PROJECT_DIR$/dongqiudi/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="6" selection-start-column="6" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="290">
+            <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="637">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -469,24 +506,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/items.py">
+    <entry file="file://$PROJECT_DIR$/mafengwo/mafengwo/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="493">
+          <caret line="17" column="60" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="20" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/spiders/crawl_dongqiudi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dongqiudi/dongqiudi/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
         </state>
       </provider>
     </entry>

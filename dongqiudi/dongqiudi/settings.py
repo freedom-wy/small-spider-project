@@ -22,7 +22,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, li
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 2
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -52,9 +52,10 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'dongqiudi.middlewares.DongqiudiDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   # 'dongqiudi.middlewares.DongqiudiDownloaderMiddleware': 543,
+   'dongqiudi.middlewares.DongqiudiProxyMiddleware': 543,
+}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -62,10 +63,15 @@ ROBOTSTXT_OBEY = False
 #    'scrapy.extensions.telnet.TelnetConsole': None,
 #}
 
+#设置图片保存路径
+IMAGES_STORE = './dongqiudi_pic'
+
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+
 ITEM_PIPELINES = {
    'dongqiudi.pipelines.DongqiudiPipeline': 300,
+   #必须设置IMAGES_STORE,否则这条中间件不起作用
    'dongqiudi.pipelines.DongqiudiImagePipeline': 209
 }
 
@@ -89,5 +95,3 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-#设置图片保存路径
-IMAGES_STORE = './dongqiudi_pic'
