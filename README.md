@@ -8,6 +8,7 @@
 #### 5、douban_movie_top250 豆瓣电影top250数据抓取 
 #### 6、mafengwo_article_spider 马蜂窝所有游记抓取
 #### 7、dasouche 大搜车数据抓取
+#### 8、dongqiudi 懂球帝新闻数据抓取
 
 
 
