@@ -9,12 +9,13 @@ class CrawlDongqiudiSpider(scrapy.Spider):
     allowed_domains = ['dongqiudi.com']
     start_urls = ['http://dongqiudi.com/']
 
-    #构造页码请求,如当前页面显示有13822页,因此构造13822个页码URL
+    #构造页码请求,如当前页面显示有13822页,需要分析当前标签下最大请求页码
     def start_requests(self):
-        for page in range(1,13823):
-            page_url = "http://www.dongqiudi.com/?tab=1&page=%s"%page
-            yield scrapy.Request(url=page_url,callback=self.handle_page_response,dont_filter=True)
-            break
+        for page in range(1,50):
+            #分析标签结构
+            for item_value in [1,56,55,37,120,3,5,4,6]:
+                page_url = "http://www.dongqiudi.com/?tab=%s&page=%s"%(item_value,page)
+                yield scrapy.Request(url=page_url,callback=self.handle_page_response,dont_filter=True)
 
     #处理页码请求的返回
     def handle_page_response(self,response):
