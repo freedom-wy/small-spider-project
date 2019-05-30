@@ -5,7 +5,6 @@ import requests
 import time
 import pymongo
 from pymongo.collection import Collection
-import multiprocessing
 
 
 
@@ -59,14 +58,19 @@ class HandleLaGou(object):
                 if method == "GET":
                     response = self.lagou_session.get(url=url,headers=self.header,proxies=proxies)
                 elif method == "POST":
-                    time.sleep(random.choice(range(5,16)))
-                    response = self.lagou_session.post(url=url,headers=self.header,data=data,proxies=proxies)
-            except:
+                    response = self.lagou_session.post(url=url,headers=self.header,data=data,proxies=proxies,timeout=3)
+                    # response = self.lagou_session.post(url=url,headers=self.header,data=data)
+            except Exception as e:
+                print(e)
                 continue
             else:
                 if '您操作太频繁,请稍后再访问' in response.text:
+                    print('频繁')
+                    time.sleep(random.choice(range(5,16)))
                     continue
-                elif response.text == []:
+                elif '爬虫行为' in response.text:
+                    print('爬虫')
+                    time.sleep(random.choice(range(5,16)))
                     continue
                 else:
                     return response.text
@@ -78,11 +82,9 @@ class HandleLaGou(object):
     def run(self):
         self.handle_city()
         print(self.city_list)
-        pool = multiprocessing.Pool(1)
-        for city in self.city_list[0:2]:
-            pool.apply_async(self.handle_city_job,(city,))
-        pool.close()
-        pool.join()
+        for city in self.city_list:
+            self.handle_city_job(city=city)
+
 
 def main():
     lagou = HandleLaGou()
