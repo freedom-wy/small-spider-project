@@ -4,6 +4,7 @@ import requests
 import time
 import multiprocessing
 from lagou.handle_mongo import lagou_mongo
+import random
 
 
 
@@ -71,11 +72,11 @@ class HandleLaGou(object):
             else:
                 if '您操作太频繁,请稍后再访问' in response.text:
                     print('频繁')
-                    # time.sleep(random.choice(range(5,16)))
+                    time.sleep(random.choice(range(10,13)))
                     continue
                 elif '爬虫行为' in response.text:
                     print('爬虫')
-                    # time.sleep(random.choice(range(5,16)))
+                    time.sleep(random.choice(range(10,13)))
                     continue
                 else:
                     return response.text
