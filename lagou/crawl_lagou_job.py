@@ -47,6 +47,22 @@ class HandleLaGou(object):
             job_list = lagou_data['content']['positionResult']['result']
             if job_list:
                 for job in job_list:
+                    if 'salary' in job:
+                        salary = job.get('salary',"").split("-")
+                        if len(salary) == 2:
+                            min_salary,max_salary = salary
+                        elif len(salary) == 1:
+                            min_salary,max_salary = 0,salary
+                        else:
+                            min_salary,max_salary = '无数据','无数据'
+                        job.pop("salary")
+                        job['min_salary'] = min_salary
+                        job['max_salary'] = max_salary
+                    else:
+                        min_salary, max_salary = '无数据', '无数据'
+                        job['min_salary'] = min_salary
+                        job['max_salary'] = max_salary
+                    job['crawl_time'] = time.strftime("%Y-%m-%d", time.localtime())
                     lagou_mongo.handle_save_data(job)
                 time.sleep(10)
             else:
@@ -54,17 +70,12 @@ class HandleLaGou(object):
 
     def handle_request(self,method,url,data=None):
         while True:
-            # proxy="http://HTK32673HL02BK2D:50125D2D38937C94@http-dyn.abuyun.com:9020"
-            # proxies = {
-            #     "http":proxy,
-            #     "https":proxy
-            # }
             try:
                 if method == "GET":
-                    # response = self.lagou_session.get(url=url,headers=self.header,proxies=proxies)
+                    # response = self.lagou_session.get(url=url,headers=self.header,proxies=proxy,timeout=6)
                     response = self.lagou_session.get(url=url,headers=self.header)
                 elif method == "POST":
-                    # response = self.lagou_session.post(url=url,headers=self.header,data=data,proxies=proxies,timeout=3)
+                    # response = self.lagou_session.post(url=url,headers=self.header,data=data,proxies=proxy,timeout=6)
                     response = self.lagou_session.post(url=url,headers=self.header,data=data)
             except Exception as e:
                 print(e)
