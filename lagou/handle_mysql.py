@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column,Integer,String,Float,Date
 from sqlalchemy.orm import sessionmaker
-import json
+import time
 
 
 #创建数据库连接
@@ -65,6 +65,7 @@ class HandleLagouData(object):
         self.item = Lagoutables()
 
     def insert_item(self,item):
+        date = time.strftime("%Y-%m-%d", time.localtime())
         data = Lagoutables(
             # 岗位ID
             positionId = item['positionId'],
@@ -103,9 +104,16 @@ class HandleLagouData(object):
             # 最高工资
             max_salary = item['max_salary'],
             # 抓取日期
-            crawl_date = item['crawl_date'])
-        self.mysql_session.add(data)
-        self.mysql_session.commit()
-        return self.item
+            crawl_date = item['crawl_date']
+            )
+        query_result = self.mysql_session.query(Lagoutables).filter(Lagoutables.crawl_date==date,Lagoutables.positionId==item['positionId']).first()
+        if query_result:
+            pass
+        else:
+            self.mysql_session.add(data)
+            self.mysql_session.commit()
+            return self.item
 
 lagou_mysql = HandleLagouData()
+# item = {'positionId':6009711}
+# lagou_mysql.insert_item(item)
