@@ -97,14 +97,13 @@ class HandleLaGou(object):
     def run(self):
         self.handle_city()
         print(self.city_list)
-        for city in self.city_list:
-            self.handle_city_job(city=city)
-            break
-        # pool = multiprocessing.Pool()
         # for city in self.city_list:
-        #     pool.apply_async(self.handle_city_job,args=(city,))
-        # pool.close()
-        # pool.join()
+        #     self.handle_city_job(city=city)
+        pool = multiprocessing.Pool()
+        for city in self.city_list:
+            pool.apply_async(self.handle_city_job,args=(city,))
+        pool.close()
+        pool.join()
 
 
 def main():
