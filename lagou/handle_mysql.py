@@ -17,8 +17,10 @@ Session = sessionmaker(bind=engine)
 class Lagoutables(Base):
     __tablename__ = 'lagou_data'
 
+    #id
+    id = Column(Integer,primary_key=True,autoincrement=True)
     #岗位ID
-    positionId = Column(Integer,primary_key=True,nullable=False)
+    positionId = Column(Integer,nullable=False)
     #经度
     longitude = Column(Float,nullable=False)
     #纬度

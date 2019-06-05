@@ -4,7 +4,7 @@ import requests
 import time
 import multiprocessing
 # from lagou.handle_mongo import lagou_mongo
-from lagou.handle_mysql import lagou_mysql
+from handle_mysql import lagou_mysql
 import random
 
 
@@ -63,6 +63,7 @@ class HandleLaGou(object):
                         min_salary, max_salary = '无数据', '无数据'
                         job['min_salary'] = min_salary
                         job['max_salary'] = max_salary
+                    #print(job)
                     job['crawl_date'] = time.strftime("%Y-%m-%d", time.localtime())
                     # lagou_mongo.handle_save_data(job)
                     lagou_mysql.insert_item(job)
@@ -84,7 +85,7 @@ class HandleLaGou(object):
                 continue
             else:
                 if '您操作太频繁,请稍后再访问' in response.text:
-                    print('频繁')
+                    print('频繁',data)
                     time.sleep(random.choice(range(10,13)))
                     continue
                 elif '爬虫行为' in response.text:
