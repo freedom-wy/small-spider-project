@@ -2,9 +2,15 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+<<<<<<< HEAD
       <sourceFolder url="file://$MODULE_DIR$/douban_movie_top250_scrapy" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
+=======
+      <sourceFolder url="file://$MODULE_DIR$/lagou" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
+>>>>>>> 4f166f8ac67bd0ca576bc8285b1ca324873f480d
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">

@@ -51,10 +51,8 @@ class Lagoutables(Base):
     district = Column(String(length=20),nullable=True)
     #公司福利标签
     companyLabelList = Column(String(length=200),nullable=True)
-    #最低工资
-    min_salary = Column(String(length=20),nullable=False)
-    #最高工资
-    max_salary = Column(String(length=20),nullable=False)
+    #工资
+    salary = Column(String(length=20),nullable=False)
     #抓取日期
     crawl_date = Column(Date,nullable=False)
 
@@ -101,19 +99,17 @@ class HandleLagouData(object):
             district = item['district'],
             # 公司福利标签
             companyLabelList = ','.join(item['companyLabelList']),
-            # 最低工资
-            min_salary = item['min_salary'],
-            # 最高工资
-            max_salary = item['max_salary'],
+            salary = item['salary'],
             # 抓取日期
             crawl_date = item['crawl_date']
             )
         query_result = self.mysql_session.query(Lagoutables).filter(Lagoutables.crawl_date==date,Lagoutables.positionId==item['positionId']).first()
         if query_result:
-            pass
+            print('该岗位信息已存在%s:%s:%s'%(item['positionId'],item['city'],item['positionName']))
         else:
             self.mysql_session.add(data)
             self.mysql_session.commit()
+            print('新增岗位信息%s'%item['positionId'])
             return self.item
 
 lagou_mysql = HandleLagouData()
