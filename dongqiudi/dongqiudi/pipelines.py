@@ -14,7 +14,7 @@ from scrapy import Request
 #存储数据
 class DongqiudiPipeline(object):
     def __init__(self):
-        mongo_client = pymongo.MongoClient(host='127.0.0.1',port=27017)
+        mongo_client = pymongo.MongoClient(host='192.168.7.142',port=27017)
         self.dongqiudi_db = mongo_client['dongqiudi_data']
     def process_item(self, item, spider):
         dongqiudi_collection = Collection(self.dongqiudi_db,"dongqiudi")
