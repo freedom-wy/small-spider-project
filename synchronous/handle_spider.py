@@ -1,4 +1,5 @@
-from handle_redis import RedisQueue
+# from handle_redis import RedisQueue
+from handle_queue import DangdangQueue
 from handle_request import DangdangRequest
 from lxml import etree
 
@@ -9,7 +10,8 @@ class Spider(object):
                       "Chrome/86.0.4240.75 Safari/537.36 "
     }
 
-    queue = RedisQueue()
+    # queue = RedisQueue()
+    queue = DangdangQueue()
 
     def start(self):
         """爬虫起始方法"""
