@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bec5d95f-6227-416d-95d7-531e2650f6a5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/small-spider-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/small-spider-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synchronous/handle_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/synchronous/handle_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synchronous/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synchronous/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synchronous/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synchronous/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synchronous/.idea/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synchronous/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synchronous/handle_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/synchronous/handle_queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synchronous/handle_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/synchronous/handle_request.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,24 +33,42 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="handle_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.multiprocess_share">
+    <configuration name="handle_request" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="small-spider-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/synchronous" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/synchronous/handle_request.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="handle_spider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="small-spider-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,9 +90,86 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="multiprocess_pool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="small-spider-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/synchronous/sample" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/synchronous/sample/multiprocess_pool.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="multiprocess_share" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="small-spider-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/synchronous/sample" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/synchronous/sample/multiprocess_share.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="process_not_share (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="small-spider-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/synchronous/sample" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/synchronous/sample/process_not_share.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.multiprocess_pool" />
+      <item itemvalue="Python.process_not_share (1)" />
+      <item itemvalue="Python.multiprocess_share" />
+      <item itemvalue="Python.handle_spider" />
+      <item itemvalue="Python.handle_request" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.multiprocess_share" />
+        <item itemvalue="Python.process_not_share (1)" />
         <item itemvalue="Python.handle_spider" />
+        <item itemvalue="Python.handle_request" />
+        <item itemvalue="Python.multiprocess_pool" />
       </list>
     </recent_temporary>
   </component>
@@ -81,6 +184,11 @@
       <option name="presentableId" value="Default" />
       <updated>1608892001801</updated>
       <workItem from="1608892006200" duration="1023000" />
+      <workItem from="1608957187648" duration="1645000" />
+      <workItem from="1608965561177" duration="9275000" />
+      <workItem from="1609052539000" duration="2394000" />
+      <workItem from="1609054951480" duration="72000" />
+      <workItem from="1609055275666" duration="2352000" />
     </task>
     <servers />
   </component>
@@ -92,13 +200,64 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608988108742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.158.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1608988108742" />
+    <state x="597" y="81" key="#pytest_in_test_multiprocess1.py" timestamp="1608965494139">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="597" y="81" key="#pytest_in_test_multiprocess1.py/-1366.158.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1608965494139" />
+    <state width="1313" height="250" key="GridCell.Tab.0.bottom" timestamp="1609077676384">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1867" height="146" key="GridCell.Tab.0.bottom/-1366.158.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1609056991931" />
+    <state width="1313" height="250" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609077676384" />
+    <state width="1313" height="250" key="GridCell.Tab.0.center" timestamp="1609077676384">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1867" height="146" key="GridCell.Tab.0.center/-1366.158.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1609056991930" />
+    <state width="1313" height="250" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609077676384" />
+    <state width="1313" height="250" key="GridCell.Tab.0.left" timestamp="1609077676384">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1867" height="146" key="GridCell.Tab.0.left/-1366.158.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1609056991930" />
+    <state width="1313" height="250" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609077676384" />
+    <state width="1313" height="250" key="GridCell.Tab.0.right" timestamp="1609077676384">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1867" height="146" key="GridCell.Tab.0.right/-1366.158.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1609056991931" />
+    <state width="1313" height="250" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609077676384" />
+    <state x="666" y="75" key="SettingsEditor" timestamp="1608988091829">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="75" key="SettingsEditor/-1366.158.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1608988091829" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1609053673032">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/-1366.158.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1609053673032" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/small_spider_project$handle_spider.coverage" NAME="handle_spider Coverage Results" MODIFIED="1608894839383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous" />
+    <SUITE FILE_PATH="coverage/small_spider_project$multiprocess_test3.coverage" NAME="multiprocess_test3 Coverage Results" MODIFIED="1608968567292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous/sample" />
+    <SUITE FILE_PATH="coverage/small_spider_project$pytest_in_test_multiprocess1_py.coverage" NAME="pytest in test_multiprocess1.py Coverage Results" MODIFIED="1608965421370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous/sample" />
+    <SUITE FILE_PATH="coverage/small_spider_project$process_not_share__1_.coverage" NAME="process_not_share (1) Coverage Results" MODIFIED="1609056581262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous/sample" />
+    <SUITE FILE_PATH="coverage/small_spider_project$multiprocess_safe.coverage" NAME="multiprocess_safe Coverage Results" MODIFIED="1608987963690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous/sample" />
+    <SUITE FILE_PATH="coverage/small_spider_project$handle_spider.coverage" NAME="handle_spider Coverage Results" MODIFIED="1609055424939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous" />
+    <SUITE FILE_PATH="coverage/small_spider_project$multiprocess_pool.coverage" NAME="multiprocess_pool Coverage Results" MODIFIED="1608985090692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous/sample" />
+    <SUITE FILE_PATH="coverage/small_spider_project$multiprocess_share.coverage" NAME="multiprocess_share Coverage Results" MODIFIED="1609056991921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous/sample" />
+    <SUITE FILE_PATH="coverage/small_spider_project$multiprocess_test2.coverage" NAME="multiprocess_test2 Coverage Results" MODIFIED="1608967501726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous/sample" />
+    <SUITE FILE_PATH="coverage/small_spider_project$multiprocess_test1.coverage" NAME="multiprocess_test1 Coverage Results" MODIFIED="1608985030934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous/sample" />
+    <SUITE FILE_PATH="coverage/small_spider_project$handle_request.coverage" NAME="handle_request Coverage Results" MODIFIED="1609055416129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous" />
+    <SUITE FILE_PATH="coverage/small_spider_project$multiprocess_class.coverage" NAME="multiprocess_class Coverage Results" MODIFIED="1608966736022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous/sample" />
+    <SUITE FILE_PATH="coverage/small_spider_project$pytest_in_multiprocess_not_share_py.coverage" NAME="pytest in process_not_share.py Coverage Results" MODIFIED="1608988095193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/synchronous/sample" />
   </component>
 </project>
