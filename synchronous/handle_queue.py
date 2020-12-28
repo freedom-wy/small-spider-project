@@ -13,7 +13,7 @@ class DangdangQueue(object):
         return False
 
     def get_data(self):
-        if self.queue.qsize():
+        if not self.queue.empty():
             data = self.queue.get()
             print("取出任务：", data)
             return data
